@@ -1,7 +1,7 @@
 # ProjectExpress0
 
 ## Outline
-Ilta Teacher : Rn  
+Ilta Teacher : Rn
 Team Member : 김진태 & 문경태
 
 This is a summer project to improve my skill as a frontend programmer
