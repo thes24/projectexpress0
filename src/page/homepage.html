@@ -6,15 +6,20 @@
     <title>HomePage</title>
     <link rel="stylesheet" type="text/css" href="/css/nav.css">
     <link rel="stylesheet" type="text/css" href="/css/homepage.css">
+    <script src="/js/homepage.js"></script>
 </head>
 
 <body>
     <nav class="topnav">
-        <a class="active" href="/">Home</a>
-        <a href="/board">Board</a>
-        <a href="/about">About</a>
-        <a class="signlog" href="/login">Login</a>
-        <a class="signlog" href="/signup">SignUp</a>
+        <div class="left">
+            <a class="active" href="/">Home</a>
+            <a href="/board">Board</a>
+            <a href="/about">About</a>
+        </div>
+        <div class="right">
+            <a class="signlog" id="signup-btn" href="/signup">SignUp</a>
+            <a class="signlog" id="login-btn" href="/login">Login</a>
+        </div>
     </nav>
     <div class="main">
         <h1>Welcome!</h1>

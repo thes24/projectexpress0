@@ -3,13 +3,14 @@ body {
 }
 
 .topnav {
+    display: flex;
+    flex-direction: row;
     background-color: black;
     overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
     color: whitesmoke;
     text-align: center;
     padding: 14px 16px;
@@ -29,6 +30,15 @@ body {
     color: white;
 }
 
-.topnav a.signlog {
-    float: right;
+.left, .right {
+    display: flex;
+    flex-direction: row;
+}
+
+.right {
+    margin-left: auto;
+}
+
+.left {
+    margin-right: auto;
 }

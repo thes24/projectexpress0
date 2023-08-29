@@ -10,11 +10,15 @@
 
 <body>
     <nav class="topnav">
-        <a href="/">Home</a>
-        <a href="/board">Board</a>
-        <a href="/about">About</a>
-        <a class="signlog" href="/login">Login</a>
-        <a class="active signlog" href="/signup">SignUp</a>
+        <div class="left">
+            <a href="/">Home</a>
+            <a href="/board">Board</a>
+            <a href="/about">About</a>
+        </div>
+        <div class="right">
+            <a class="signlog active" id="signup-btn" href="/signup">SignUp</a>
+            <a class="signlog" id="login-btn" href="/login">Login</a>
+        </div>
     </nav>
     <div class="signlog-wrap">
         <div class="signlog-label">SIGN UP</div>

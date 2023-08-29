@@ -5,27 +5,20 @@
     <meta charset="UTF-8">
     <title>Unauthorized</title>
     <link rel="stylesheet" type="text/css" href="/css/nav.css">
-    <style>
-        h1,
-        p,
-        iframe {
-            text-align: center;
-        }
-
-        iframe {
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/css/error.css">
 </head>
 
 <body>
     <nav class="topnav">
-        <a class="active" href="/">Home</a>
-        <a href="/board">Board</a>
-        <a href="/about">About</a>
-        <a class="signlog" href="/login">Login</a>
-        <a class="signlog" href="/signup">SignUp</a>
+        <div class="left">
+            <a href="/">Home</a>
+            <a href="/board">Board</a>
+            <a href="/about">About</a>
+        </div>
+        <div class="right">
+            <a class="signlog" id="signup-btn" href="/signup">SignUp</a>
+            <a class="signlog" id="login-btn" href="/login">Login</a>
+        </div>
     </nav>
     <h1>Hold Up!</h1>
     <p>401 Unauthorized</p>

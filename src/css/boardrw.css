@@ -1,0 +1,115 @@
+.write-form {
+    display: block;
+    margin: 70px auto 0 auto;
+    width: 50%;
+    height: max-content;
+    padding: 12px;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border: 1px solid #cedacf;
+    border-radius: 4px;
+    position: relative;
+    color: #037b39;
+    background-color: #ededed;
+    border-color: #80ffaf;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 255, 42, 0.25);
+    text-transform: uppercase;
+}
+
+.write-form input {
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.write-form input:focus {
+    outline: none;
+}
+
+.write-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 300px;
+}
+
+#write {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    font-size: small;
+    border: 2px inset #099749;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #03c75b;
+}
+
+.table-btn-row {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.table-btn-col {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    font-size: small;
+    border: 2px inset #099749;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #03c75b;
+}
+
+.read-form {
+    margin: 0 auto;
+    width: max-content;
+}
+
+.read-form table {
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 50px;
+    padding: 12px;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border: 1px solid #cedacf;
+    position: relative;
+    color: black;
+    border-color: #80ffaf;
+    box-shadow: 0 0 0 .2rem rgba(0, 255, 42, 0.25);
+    text-transform: uppercase;
+    width: 100%;
+    height: max-content;
+}
+
+.read-form th {
+    background-color: #cfd7ce;
+    border: 2px solid rgba(0, 0, 0, .5);
+    border-left: none;
+    border-right: none;
+    padding: 8px;
+    width: 20%;
+}
+
+.read-form td {
+    background-color: #ededed;
+    border: 2px solid rgba(0, 0, 0, .5);
+    border-left: none;
+    border-right: none;
+    padding: 8px;
+    width: 100%;
+}
+
+#update {
+    margin-right: 10px;
+}
+
+#board {
+    margin-left: auto;
+}

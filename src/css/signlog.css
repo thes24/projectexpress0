@@ -28,21 +28,21 @@
 
 .signlog-form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: center;
     text-align: center;
-    background-color: rgb(60, 60, 60);
+    background-color: #3c3c3c;
     border-radius: 0px 15px 15px 0px;
     min-height: 255px;
     width: 350px;
     padding: 25px;
-
 }
 
 .signlog-form input {
     color: whitesmoke;
-    background-color: rgb(100, 100, 100);
+    background-color: #646464;
     border: none;
     border-bottom: 1px solid black;
     margin: 5px;
@@ -52,7 +52,7 @@
 
 .signlog-form input:focus {
     border-color: #03c75b;
-    outline: 0;
+    outline: none;
 }
 
 .signlog-form input::placeholder {
@@ -61,19 +61,24 @@
 }
 
 .signlog-btn {
-
     color: black;
     background-color: rgb(100, 100, 100);
-    padding: 4%;
-    margin-top: 30px;
-    border: inset #03c75b;
+    padding: .375rem .75rem;
+    margin-top: 10px;
+    font-size: small;
+    border: 2px inset #099749;
     border-radius: 5px;
 }
 
 .signlog-btn:hover {
-    text-transform: uppercase;
     background-color: #03c75b;
     font-weight: 900;
-    letter-spacing: 1px;
     cursor: pointer;
+}
+
+.element {
+    width: 120px;
+    font-size: 20px;
+    margin-left: 10px;
+    color: #03c75b;
 }

@@ -5,5 +5,6 @@ WORKDIR /src
 
 RUN npm install -g pm2
 RUN npm install
+RUN npm run webpack
 
 ENTRYPOINT ["pm2-runtime", "start", "ecosystem.config.js"]

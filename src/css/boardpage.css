@@ -1,0 +1,45 @@
+.board-table {
+    margin: 0 auto;
+    width: max-content;
+}
+
+.board-table table {
+    border: 2px solid rgba(0, 0, 0, .5);
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    height: max-content;
+}
+
+.board-table th,
+.board-table td {
+    border: 2px solid rgba(0, 0, 0, .5);
+    border-left: none;
+    border-right: none;
+    padding: 8px;
+    min-width: 100px;
+}
+
+.board-table tbody tr:nth-child(odd) {
+    background-color: #ecececce;
+}
+
+.table-btn-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.table-btn-col {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    font-size: small;
+    border: 2px inset #099749;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #03c75b;
+}

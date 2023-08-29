@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LogIn Page</title>
+    <link rel="stylesheet" type="text/css" href="/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="/css/signlog.css">
+    <script src="/js/login.js"></script>
+</head>
+
+<body>
+    <nav class="topnav">
+        <div class="left">
+            <a href="/">Home</a>
+            <a href="/board">Board</a>
+            <a href="/about">About</a>
+        </div>
+        <div class="right">
+            <a class="signlog" id="signup-btn" href="/signup">SignUp</a>
+            <a class="active signlog" id="login-btn" href="/login">Login</a>
+        </div>
+    </nav>
+    <div class="signlog-wrap">
+        <div class="signlog-label">LOG IN</div>
+        <div class="signlog-form">
+            <input type="text" id="member-email" placeholder="Email"> <br>
+            <input type="password" id="member-password" placeholder="Password"> <br>
+            <button id="login" class="signlog-btn">LOG IN</button>
+        </div>
+    </div>
+    <div id="board-test"></div>
+</body>
+
+</html>
