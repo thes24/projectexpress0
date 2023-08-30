@@ -1,4 +1,4 @@
-const common = require('./common.js');
+const common = require('./zcommon.js');
 
 const main = () => {
     common.loginCheck();

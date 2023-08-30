@@ -1,4 +1,4 @@
-const swaxios = require('./swaxios');
+const swaxios = require('./zaxios');
 
 const logout = () => {
     swaxios.post('/api/member/logout')

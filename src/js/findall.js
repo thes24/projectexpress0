@@ -1,5 +1,5 @@
-const myjs = require('./common.js');
-const swaxios = require('./swaxios');
+const myjs = require('./zcommon.js');
+const swaxios = require('./zaxios.js');
 
 const main = () => {
     myjs.loginCheck();

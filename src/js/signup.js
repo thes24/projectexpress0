@@ -1,5 +1,5 @@
-const myjs = require('./common.js');
-const swaxios = require('./swaxios.js');
+const myjs = require('./zcommon.js');
+const swaxios = require('./zaxios.js');
 
 function emailCheck(email) {
     return swaxios.post('api/member/check-email', { memberEmail : email })
