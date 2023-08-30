@@ -3,6 +3,7 @@ const swaxios = require('./zaxios.js');
 
 const main = () => {
     myjs.loginCheck();
+    myjs.loginRedirect();
 
     var submitBtn = document.querySelector('#login');
     submitBtn.addEventListener('click', function() {

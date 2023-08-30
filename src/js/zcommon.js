@@ -37,6 +37,20 @@ function loginCheck() {
         });
 }
 
+function loginRedirect() {
+        return swaxios.get('/api/member/check-login')
+        .then(res => {
+            return res.data;
+        })
+        .then(data => {
+            if (data.memberId != -1) {
+                console.log('data', data);
+                window.location.href = '/';
+            }
+        })
+}
+
 module.exports = {
-    loginCheck
+    loginCheck,
+    loginRedirect,
 }

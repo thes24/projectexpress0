@@ -1,0 +1,26 @@
+.member-table {
+    margin: 0 auto;
+    width: max-content;
+}
+
+.member-table table {
+    border: 2px solid rgba(0, 0, 0, .5);
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    height: max-content;
+}
+
+.member-table th,
+.member-table td {
+    border: 2px solid rgba(0, 0, 0, .5);
+    border-left: none;
+    border-right: none;
+    padding: 8px;
+    min-width: 100px;
+}
+
+.member-table tbody tr:nth-child(odd) {
+    background-color: #ecececce;
+}

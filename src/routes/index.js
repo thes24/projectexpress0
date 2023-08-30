@@ -19,6 +19,10 @@ router.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'page', 'login.html'));
 });
 
+router.get('/memberall', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'page', 'memberall.html'));
+});
+
 router.get('/mypage', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'page', 'goodpage.html'));
 });

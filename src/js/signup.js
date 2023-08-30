@@ -11,27 +11,27 @@ function emailCheck(email) {
 const main = () => {
     myjs.loginCheck();
 
-    var submitBtn = document.querySelector('#signup');
+    let submitBtn = document.querySelector('#signup');
     submitBtn.addEventListener('click', async function() {
-        var memberEmail = document.querySelector('#member-email').value;
-        var memberPassword = document.querySelector('#member-password').value;
-        var memberPasswordCheck = document.querySelector('#member-password-check').value;
-        var memberName = document.querySelector('#member-name').value;
+        let memberEmail = document.querySelector('#member-email').value;
+        let memberPassword = document.querySelector('#member-password').value;
+        let memberPasswordCheck = document.querySelector('#member-password-check').value;
+        let memberName = document.querySelector('#member-name').value;
 
         if (memberEmail == '' || memberPassword == '' || memberPasswordCheck == '' || memberName == '') {
             alert('Please fill in all required fields.');
             return;
         }
 
-        const isEmailAvailable = await emailCheck(memberEmail);
-
-        if (!isEmailAvailable) {
-            alert('Email already in use. Please choose a different email.');
+        if (memberPassword !== memberPasswordCheck) {
+            alert('Passwords do not match. Please try again.');
             return;
         }
 
-        if (memberPassword !== memberPasswordCheck) {
-            alert('Passwords do not match. Please try again.');
+        try {
+            const isEmailAvailable = await emailCheck(memberEmail);
+        } catch (err) {
+            alert('Email already in use. Please choose a different email.');
             return;
         }
 
