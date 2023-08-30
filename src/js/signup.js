@@ -1,7 +1,7 @@
 const myjs = require('./common.js');
 const swaxios = require('./swaxios.js');
 
-function emailCheck() {
+function emailCheck(email) {
     return swaxios.post('api/member/check-email', { memberEmail : email })
         .then(res => {
             return res.status == 200;
