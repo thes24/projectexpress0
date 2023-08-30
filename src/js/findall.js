@@ -1,5 +1,9 @@
-window.test = function() {
-    myjs.printAlert();
+const myjs = require('./common.js');
+const swaxios = require('./swaxios');
+
+const main = () => {
+    myjs.loginCheck();
+
     swaxios.get('/api/member/find-all')
     .then(function (res) {
         console.log(res);
@@ -34,3 +38,5 @@ window.test = function() {
         console.log(err);
     });
 }
+
+window.onload = main;

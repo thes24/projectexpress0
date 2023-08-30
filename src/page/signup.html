@@ -6,6 +6,7 @@
     <title>SignUp Page</title>
     <link rel="stylesheet" type="text/css" href="/css/nav.css">
     <link rel="stylesheet" type="text/css" href="/css/signlog.css">
+    <script src="/js/signup.js"></script>
 </head>
 
 <body>
@@ -23,13 +24,11 @@
     <div class="signlog-wrap">
         <div class="signlog-label">SIGN UP</div>
         <div class="signlog-form">
-            <form>
-                <input type="text" name="memberEmail" placeholder="Email"> <br>
-                <input type="password" name="memberPassword" placeholder="Password"> <br>
-                <input type="password" name="memberPasswordCheck" placeholder="Confirm Password"> <br>
-                <input type="text" name="memberName" placeholder="Name"> <br>
-                <button type="submit" class="signlog-btn">SIGN UP</button>
-            </form>
+            <input type="text" name="member-email" placeholder="Email"> <br>
+            <input type="password" name="member-password" placeholder="Password"> <br>
+            <input type="password" name="member-password-check" placeholder="Confirm Password"> <br>
+            <input type="text" name="member-name" placeholder="Name"> <br>
+            <button id="signup" class="signlog-btn">SIGN UP</button>
         </div>
     </div>
 </body>

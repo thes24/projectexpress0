@@ -1,7 +1,7 @@
-const common = require('./common.js');
+const myjs = require('./common.js');
 
 const main = () => {
-    common.loginCheck();
+    myjs.loginCheck();
 }
 
 window.onload = main;
