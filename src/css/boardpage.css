@@ -43,3 +43,7 @@
     color: #fff;
     background-color: #03c75b;
 }
+
+#New:hover {
+    cursor: pointer;
+}
