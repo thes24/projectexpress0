@@ -29,12 +29,13 @@ const main = () => {
             const row = document.createElement('tr');
 
             const noCell = createTableCell(rowNumber);
+            noCell.setAttribute('id', board.boardId);
             rowNumber++;
             row.appendChild(noCell);
 
             const titleCell = document.createElement('td');
             const titleLink = document.createElement('a');
-            titleLink.href = `/board/${board.boardId}`;
+            titleLink.href = `/board/read?id=${board.boardId}`;
             titleLink.textContent = board.boardTitle;
             titleCell.appendChild(titleLink);
             row.appendChild(titleCell);
