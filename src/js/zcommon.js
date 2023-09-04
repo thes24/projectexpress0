@@ -11,7 +11,7 @@ const logout = () => {
         window.location.reload();
     })
     .catch(function (err) {
-        console.log('err', err);
+        console.error('err', err);
     });
 }
 
@@ -21,7 +21,7 @@ function loginCheck() {
         return res.data;
     })
     .then(data => {
-        if (data.memberId != -1) {
+        if (data.memberId !== -1) {
             var navlog = document.getElementById('login-btn');
             navlog.textContent = 'LogOut';
             navlog.addEventListener('click', logout);
@@ -43,28 +43,31 @@ function loginRedirect() {
         return res.data;
     })
     .then(data => {
-        if (data.memberId != -1) {
+        if (data.memberId !== -1) {
             console.log('data', data);
             window.location.href = '/';
         }
     })
 }
 
-function getMemberId() {
+function getMemberName() {
     return swaxios.get('/api/member/check-login')
     .then(res => {
         return res.data;
     })
     .then(data => {
-        if (data.memberId != -1) {
+        if (data.memberId !== -1) {
             console.log('data', data);
-            return data.memberId;
+            return data.memberName;
         }
     })
+    .catch(err => {
+        console.error('Error fetching memberEmail:', err);
+    });
 }
 
 module.exports = {
     loginCheck,
     loginRedirect,
-    getMemberId,
+    getMemberName,
 }

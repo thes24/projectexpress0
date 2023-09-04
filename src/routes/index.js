@@ -39,4 +39,8 @@ router.get('/board/read', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'page', 'boardread.html'));
 });
 
+router.get('/board/update', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'page', 'boardupdate.html'));
+});
+
 module.exports = router;

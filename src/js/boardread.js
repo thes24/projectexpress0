@@ -10,19 +10,19 @@ const main = async () => {
 
     const uptButton = document.getElementById('update');
     uptButton.addEventListener('click', function() {
-        window.location.href = '/board/update';
+        window.location.href = `/board/update?id=${boardId}`;
     });
 
     const dltButton = document.getElementById('delete');
     dltButton.addEventListener('click', function() {
         swaxios.delete(`/api/board/delete/${boardId}`)
-        .then(function(res) {
-            console.log("Board deleted successfully");
-            window.location.href = '/board/find-all';
+        .then(function (res) {
+            console.log("Board deleted successfully", res);
+            window.location.href = '/board';
             return res.data
         })
-        .catch(function(err) {
-            console.error(err);
+        .catch(function (err) {
+            console.error('error', err);
         });
     });
 
@@ -44,6 +44,7 @@ const main = async () => {
 
         const authorTable = document.getElementById('author');
         const authorCell = document.createElement('td');
+        authorCell.setAttribute('id', data.boardId);
         authorCell.textContent = data.boardWriter;
         authorTable.appendChild(authorCell);
 
