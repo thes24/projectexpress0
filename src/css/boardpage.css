@@ -10,6 +10,25 @@
     margin-top: 50px;
     width: 100%;
     height: max-content;
+
+    text-decoration: none;
+}
+
+.board-table a:link {
+    color: #03c75b;
+    text-decoration: none;
+}
+
+.board-table a:hover {
+    color: #0382c7;
+}
+
+.board-table a:visited {
+    color: #c75b03
+}
+
+.board-table a:active {
+    color: #c703a6;
 }
 
 .board-table th,

@@ -29,7 +29,7 @@ function loginCheck() {
 
             var navsign = document.getElementById('signup-btn');
             navsign.textContent = data.memberName;
-            navsign.href = '/mypage/';
+            navsign.href = '/mypage';
         }
     })
     .catch(err => {
@@ -66,8 +66,42 @@ function getMemberName() {
     });
 }
 
+function getMemberId() {
+    return swaxios.get('/api/member/check-login')
+    .then(res => {
+        return res.data;
+    })
+    .then(data => {
+        if (data.memberId !== -1) {
+            console.log('data', data);
+            return data.memberId;
+        }
+    })
+    .catch(err => {
+        console.error('Error fetching memberId:', err);
+    });
+}
+
+function getMemberEmail() {
+    return swaxios.get('/api/member/check-login')
+    .then(res => {
+        return res.data;
+    })
+    .then(data => {
+        if (data.memberId !== -1) {
+            console.log('data', data);
+            return data.memberEmail;
+        }
+    })
+    .catch(err => {
+        console.error('Error fetching memberId:', err);
+    });
+}
+
 module.exports = {
     loginCheck,
     loginRedirect,
+    getMemberId,
+    getMemberEmail,
     getMemberName,
 }

@@ -1,0 +1,46 @@
+.mypage-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin: 30px;
+}
+
+.mypage-info {
+    margin: 0 0 0 auto;
+    border: 2px solid rgba(0, 0, 0, .5);
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 50px;
+    width: 25rem;
+    height: 100%;
+}
+
+.mypage-info table {
+    border: 2px solid rgba(0, 0, 0, .5);
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.mypage-info th,
+.mypage-info td {
+    border: 2px solid rgba(0, 0, 0, .5);
+    border-left: none;
+    padding: 8px;
+    min-width: 100px;
+}
+
+.mypage-pic {
+    margin: 0 auto 0 0;
+    width: 25rem;
+}
+
+.cat {
+    height: 100%;
+    width: 100%;
+}

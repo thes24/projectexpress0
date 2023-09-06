@@ -27,6 +27,7 @@ const main = () => {
         })
         .catch(function (err) {
             console.log('err', err);
+            alert('Incorrect Email or Password. Please try again.')
         });
     })
 }

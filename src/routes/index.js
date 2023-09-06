@@ -24,7 +24,7 @@ router.get('/memberall', (req, res) => {
 });
 
 router.get('/mypage', (req, res) => {
-    res.sendFile(path.join(__dirname, '..', 'page', 'goodpage.html'));
+    res.sendFile(path.join(__dirname, '..', 'page', 'mypage.html'));
 });
 
 router.get('/board', (req, res) => {

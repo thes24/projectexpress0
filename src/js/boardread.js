@@ -1,7 +1,7 @@
 const myjs = require('./zcommon.js');
 const swaxios = require('./zaxios.js');
 
-const main = async () => {
+const main = () => {
     myjs.loginCheck();
 
     const queryString = window.location.search;
