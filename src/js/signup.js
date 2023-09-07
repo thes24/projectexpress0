@@ -46,11 +46,7 @@ const main = () => {
         })
         .then(function (data) {
             console.log('data', data);
-            if ('referrer' in document) {
-                window.location = document.referrer;
-            } else {
-                window.location.href = '/';
-            }
+            window.location.href = '/login';
         })
         .catch(function (err) {
             console.log('error', err);

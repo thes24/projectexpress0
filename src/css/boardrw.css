@@ -71,15 +71,14 @@ button:hover {
 }
 
 .read-form {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
     width: max-content;
 }
 
-.read-form table {
-    border-collapse: collapse;
+.read-table {
     text-align: center;
-    margin-top: 50px;
-    padding: 12px;
     line-height: 1.5;
     background-clip: padding-box;
     border: 1px solid #cedacf;
@@ -87,12 +86,17 @@ button:hover {
     color: black;
     border-color: #80ffaf;
     box-shadow: 0 0 0 .2rem rgba(0, 255, 42, 0.25);
-    text-transform: uppercase;
     width: 100%;
     height: max-content;
 }
 
+.read-form table {
+    border-collapse: collapse;
+    padding: 12px;
+}
+
 .read-form th {
+    text-transform: uppercase;
     background-color: #cfd7ce;
     border: 2px solid rgba(0, 0, 0, .5);
     border-left: none;
@@ -106,6 +110,8 @@ button:hover {
     border: 2px solid rgba(0, 0, 0, .5);
     border-left: none;
     border-right: none;
+    max-width: 40rem;
+    overflow: auto;
     padding: 8px;
     width: 100%;
 }

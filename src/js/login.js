@@ -19,10 +19,14 @@ const main = () => {
         })
         .then(function (data) {
             console.log('data', data);
-            if ('referrer' in document) {
-                window.location = document.referrer;
-            } else {
+            if (document.referrer.includes('/signup')) {
                 window.location.href = '/';
+            } else {
+                if ('referrer' in document) {
+                    window.location = document.referrer;
+                } else {
+                    window.location.href = '/';
+                }
             }
         })
         .catch(function (err) {

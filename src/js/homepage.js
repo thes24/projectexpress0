@@ -1,7 +1,7 @@
-const common = require('./zcommon.js');
+const myjs = require('./zcommon.js');
 
 const main = () => {
-    common.loginCheck();
+    myjs.loginCheck();
 }
 
 window.onload = main;
