@@ -2,7 +2,6 @@
 
 ## Outline
 Ilta Teacher : Rn
-Team Member : 김진태 & 문경태
 
 This is a summer project to improve my skill as a frontend programmer
 This is a Demo Project
